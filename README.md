@@ -80,4 +80,10 @@ Please contact us at **icshunt.help@gmail.com**
 - Lua: [icecream-lua](https://github.com/wlingze/icecream-lua)
 - Clojure(Script): [icecream-cljc](https://github.com/Eigenbahn/icecream-cljc)
 - Bash: [IceCream-Bash](https://github.com/jtplaarj/IceCream-Bash)
+-------------------------
+!["Copyright (c) 2024 IC Verimeter"](https://github.com/xver/icecream_sv/blob/master/doc/IcVerimeter_logo.png)
+Copyright (c) 2024 IC Verimeter
+
+
+  
 
