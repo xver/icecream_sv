@@ -2,7 +2,7 @@
 
 ![icecream_sv Logo](https://github.com/xver/icecream_sv/blob/main/doc/icecream_sv_log.png)
 
-Never use *$display* and *`uvm_info* to debug SystemVerilog again.
+Never use **$display** and **`uvm_info** to debug SystemVerilog again.
 
 The **icecream_sv** utility makes it easier to inspect variables, expressions, and program flow with minimal syntax. Inspired by the `IceCream` project, `icecream_sv` aims to bring the simplicity and convenience of those tools to the SystemVerilog world. **icecream_sv** is available under the MIT License and can be used without restriction in both open-source and commercial applications.
 
@@ -77,7 +77,7 @@ Please contact us at **icshunt.help@gmail.com**
 
 - Inspired by `IceCream` progects: 
 
-  Delicious IceCream should be enjoyed in every language.
+  Delicious `IceCream` should be enjoyed in every language.
 
 - Dart: [icecream](https://github.com/HallerPatrick/icecream)
 - Rust: [icecream-rs](https://github.com/ericchang00/icecream-rs)
