@@ -1,4 +1,4 @@
-# Welcome to icecream_sv - Simple Implementation of IceCream for SystemVerilog!
+# Welcome to icecream_sv - IceCream for SystemVerilog!
 
 ![icecream_sv Logo](https://github.com/xver/icecream_sv/blob/main/doc/icecream_sv_log.png)
 
