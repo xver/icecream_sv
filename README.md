@@ -17,25 +17,30 @@ To debug with `icecream_sv`, use the `IC` macros anywhere in your SystemVerilog 
 ```systemverilog
 module my_module;
 
-  initial begin
-    // Example usage of icecream_sv
-    int var = 10;
-    byte  = "A"; 
-    string str_char = "ICECREAM for SV"
-    `IC;          // This will print this line number and  file name  
-    `IC_HEX(var); // This will print the variable name and its value in hex format
-    `IC_DEC(var); // This will print the variable name and its value in dec format
-    `IC_CHAR(char_var); // This will print ASCII and HEX for char_var variable
-    `IC_STR(str_var);   // This will print string_var string
-  end
-endmodule my_module
+ initial begin
+   // Example usage of icecream_sv
+   int value = 10;
+   byte char = "A"; 
+   string str = "ICECREAM for SV";
+      
+   `IC;          // This will print this line number and  file name  
+   `IC_HEX(value); // This will print the variable name and its value in hex format
+   `IC_DEC(value); // This will print the variable name and its value in dec format
+   `IC_CHAR(char); // This will print ASCII and HEX for char_var variable
+   `IC_STR(str);   // This will print string_var string
+      
+   $finish;
+end // initial begin
+endmodule: my_module
 
 Output: 
-        IC_SV:: @0 Line:52 File:../test_icecream.sv
-        IC_SV:: @0 hex_var(f)
-        IC_SV:: @0 decimal_var(10)
-        IC_SV:: @0 char_var(41),(A)
-        IC_SV:: @0 str_var(ICECREAM for S)
+
+IC_SV:: @0 Line:29 File:../test_icecream.sv
+IC_SV:: @0 value(a)
+IC_SV:: @0 value(10)
+IC_SV:: @0 char(41),(A)
+IC_SV:: @0 str(ICECREAM for SV)
+
 ```
 
 ### Compile and Run Example
