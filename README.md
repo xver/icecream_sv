@@ -1,6 +1,6 @@
 # Welcome to icecream_sv - Simple Implementation of IceCream for SystemVerilog!
 
-![icecream_sv Logo](https://github.com/xver/icecream_sv/blob/master/doc/icecream_sv_log.png)
+![icecream_sv Logo](https://github.com/xver/icecream_sv/blob/main/doc/icecream_sv_log.png)
 
 Never use `$display` and `uvm_info` to debug SystemVerilog again.
 
@@ -81,7 +81,7 @@ Please contact us at **icshunt.help@gmail.com**
 - Clojure(Script): [icecream-cljc](https://github.com/Eigenbahn/icecream-cljc)
 - Bash: [IceCream-Bash](https://github.com/jtplaarj/IceCream-Bash)
 -------------------------
-!["Copyright (c) 2024 IC Verimeter"](https://github.com/xver/icecream_sv/blob/master/doc/IcVerimeter_logo.png)
+!["Copyright (c) 2024 IC Verimeter"]((https://github.com/xver/icecream_sv/blob/main/doc/IcVerimeter_logo.png)
 Copyright (c) 2024 IC Verimeter
 
 
