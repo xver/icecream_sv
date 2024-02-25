@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ice",["Package"],[["icecream_pkg",,[[,,,,0,"File:icecream_pkg.sv:icecream_pkg","SystemVerilogPackage:icecream_pkg"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cha",["Variable"],[["char_var",,[["test_icecream",,,,0,"File2:test_icecream.sv:test_icecream.char_var","SystemVerilogModule:test_icecream:char_var"]]]]);

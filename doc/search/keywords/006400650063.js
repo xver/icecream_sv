@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("dec",["Variable"],[["decimal_var",,[["test_icecream",,,,0,"File2:test_icecream.sv:test_icecream.decimal_var","SystemVerilogModule:test_icecream:decimal_var"]]]]);

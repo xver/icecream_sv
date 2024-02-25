@@ -1,0 +1,1 @@
+﻿NDFramePage.OnLocationsLoaded([["File","files",0,"^File([0-9]*)$"],["Module","modules",1,"^([A-Za-z]+)Module$"],["Package","packages",1,"^([A-Za-z]+)Package$"]]);NDMenu.OnTabsLoaded([["File","Files",,"files.js"],["Module","Modules","SystemVerilogModule:","modules.js"],["Package","Classes","SystemVerilogPackage:","packages.js"]]);

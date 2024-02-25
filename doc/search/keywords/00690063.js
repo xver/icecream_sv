@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ic",["Macro"],[["IC",,[["icecream_pkg",,,,0,"File:icecream_pkg.sv:icecream_pkg.IC","SystemVerilogPackage:icecream_pkg:IC"],["test_icecream",,,,0,"File2:test_icecream.sv:test_icecream.IC","SystemVerilogModule:test_icecream:IC"]]]]);
