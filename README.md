@@ -20,15 +20,22 @@ module my_module;
   initial begin
     // Example usage of icecream_sv
     int var = 10;
-    byte char_var = "A"; 
-    string str_var = "ICECREAM for SV";
-    `IC;          // This will print the line number and file name  
+    byte  = "A"; 
+    string str_char = "ICECREAM for SV"
+    `IC;          // This will print this line number and  file name  
     `IC_HEX(var); // This will print the variable name and its value in hex format
     `IC_DEC(var); // This will print the variable name and its value in dec format
-    `IC_CHAR(char_var); // This will print ASCII and HEX for the char_var variable
-    `IC_STR(str_var);   // This will print the str_var string
+    `IC_CHAR(char_var); // This will print ASCII and HEX for char_var variable
+    `IC_STR(str_var);   // This will print string_var string
   end
-endmodule
+endmodule my_module
+
+Output: 
+        IC_SV:: @0 Line:52 File:../test_icecream.sv
+        IC_SV:: @0 hex_var(f)
+        IC_SV:: @0 decimal_var(10)
+        IC_SV:: @0 char_var(41),(A)
+        IC_SV:: @0 str_var(ICECREAM for S)
 ```
 
 ### Compile and Run Example
