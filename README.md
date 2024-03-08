@@ -75,9 +75,11 @@ Please contact us at **icshunt.help@gmail.com**
 
 ## Acknowledgments
 
-- Inspired by `IceCream` progects: 
+- Inspired by `IceCream` protects: 
 
-  Delicious `IceCream` should be enjoyed in every language.
+https://github.com/gruns/icecream
+
+Delicious `IceCream` should be enjoyed in every language.
 
 - Dart: [icecream](https://github.com/HallerPatrick/icecream)
 - Rust: [icecream-rs](https://github.com/ericchang00/icecream-rs)
