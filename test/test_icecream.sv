@@ -1,12 +1,12 @@
 /*
-============================================================================
+ ============================================================================
  File        : test_icecream.sv
  Copyright (c) 2024 IC Verimeter. All rights reserved.
-               Licensed under the MIT License.
-               See LICENSE file in the project root for full license information.
+ Licensed under the MIT License.
+ See LICENSE file in the project root for full license information.
  Description : icecream_sv test
  ============================================================================
-*/
+ */
 
 /**
  * module: test_icecream
@@ -18,33 +18,104 @@
 module test_icecream;
    
    import icecream_pkg::*; 
-  
+   
    /**
     * Variable: decimal_var
-    * An integer variable used to demonstrate decimal value display.
+    * demonstrates the display of decimal values
     */
    int decimal_var = 123;
-
+   
    /**
     * Variable: hex_var
-    * A bit vector variable used to demonstrate hexadecimal value display.
+    * demonstrates the display of hexdecimal values
     */
    bit [7:0] hex_var = 8'hFF;
-
+   
    /**
     * Variable: char_var
-    * A byte variable used to demonstrate character value display.
+    * demonstrates  the display of characters.
     */
-   byte char_var = "A";
-
+   byte      char_var = "A";
+   
    /**
     * Variable: str_var
-    * A string variable used to demonstrate string value display.
+    * demonstrates the display of strings
     */
-   string str_var = "Hello, World";
+   string    str_var = "Hello, World";
+   
+   /**
+    * Variable:  fixed_array
+    * demonstrates the display of fixed array.
+    */
+   int       fixed_array[10]='{'h0, 'h3, 'h6, 'h9, 'hc, 'hf, 'h12, 'h15, 'h18, 'h1b};
+   
+   /**
+    * Variable:  dynamic_array
+    * demonstrates the display of dynamic_array.
+    */
+   int       dynamic_array[]= '{'h0, 'h5, 'ha, 'hf, 'h14};
+   
+   /**
+    * Variable: assoc_array
+    * demonstrates the display of associative array
+    */
+   int       assoc_array[string] = '{"first":'h64, "second":'hc8, "third":'h12c};
+   
+   /**
+    * Variable: queue 
+    * demonstrates the display of system verilog queues
+    */
+   int       queue[$] = '{'ha, 'h14, 'h1e};
+   
+   
+   /** variable: struct_t
+    *
+    * A structure that holds an integer, a string, and an 8-bit bit vector 
+    *
+    * Members:
+    *   int struct_int - An integer field in the structure.
+    *   string struct_string - A string field in the structure.
+    *   bit [7:0] struct_bit - An 8-bit bit vector field in the structure.
+    */
+   
+   typedef struct {
+      int         struct_int;
+      string      struct_string;
+      bit [7:0]   struct_bit;
+   } struct_t;
+
+   /**
+    * Variable: my_struct 
+    * demonstrates the display of structures
+    */
+   struct_t my_struct='{struct_int:'haa, struct_string:"Hello, World!", struct_bit:'hff};
+   
+   
+   /* Union: union_t
+    *
+    * This is a union that shares memory between different data types.
+    *
+    * Members:
+    *
+    * * int union_int - This integer value shares memory with other fields.
+    * * string union_string - This string value shares memory with other fields.
+    * * bit [7:0] union_bit - This 8-bit binary value shares memory with other fields.
+    */
+   
+   typedef union  {
+      int         union_int;
+      reg [31:0]  union_reg;
+      bit [31:0]   union_bit;
+   } union_t;
+   
+   /**
+    * Variable: my_struct 
+    * demonstrates the display of unions
+    */
+   union_t my_union;
    
    initial begin
-      
+      my_union.union_int = 'h55;
       /**
        * Define: IC
        * Demonstrates the use of the IC macro to display current simulation time, line number, and file.
@@ -99,6 +170,34 @@ module test_icecream;
        * ---
        */
       `IC_STR(str_var);
+      
+      /**
+       * Define: IC_ARR
+       * Demonstrates the use of the IC_ARR  macro to display: 
+       * 
+       * - fixed array
+       * - dynamic array
+       * - associative array
+       * - queue
+       * - structure
+       * - union
+       * 
+       * Output: 
+       * --- Code 
+       * * IC_SV:: @0 fixed_array('{'h0, 'h3, 'h6, 'h9, 'hc, 'hf, 'h12, 'h15, 'h18, 'h1b} )
+       * * IC_SV:: @0 dynamic_array('{'h0, 'h5, 'ha, 'hf, 'h14} )
+       * * IC_SV:: @0 assoc_array('{"first":'h64, "second":'hc8, "third":'h12c} )
+       * * IC_SV:: @0 queue('{'ha, 'h14, 'h1e} )
+       * * IC_SV:: @0 my_struct('{struct_int:'haa, struct_string:"Hello, World!", struct_bit:'hff})
+       * * IC_SV:: @0 my_union('{union_int:'h55, union_reg:'h55, union_bit:'h55})
+       * ---
+       */
+      `IC_ARR(fixed_array)
+      `IC_ARR(dynamic_array)
+      `IC_ARR(assoc_array)
+      `IC_ARR(queue)
+      `IC_ARR(my_struct)
+      `IC_ARR(my_union)
       
       $finish;
    end // initial begin

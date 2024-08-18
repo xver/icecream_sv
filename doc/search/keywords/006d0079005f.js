@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("my_",["Variable"],[["my_struct",,[["test_icecream",,,,0,"File2:test_icecream.sv:test_icecream.my_struct","SystemVerilogModule:test_icecream:my_struct"]]]]);

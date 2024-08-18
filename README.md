@@ -15,31 +15,65 @@ To use `icecream_sv`, simply include and import the `icecream_pkg.sv` file in yo
 To debug with `icecream_sv`, use the `IC` macros anywhere in your SystemVerilog code:
 
 ```systemverilog
-module my_module;
-
- initial begin
-   // Example usage of icecream_sv
-   int value = 10;
-   byte char = "A"; 
-   string str = "ICECREAM for SV";
+odule my_module;
+   
+   import icecream_pkg::*; 
+   
+   int decimal_var = 123;
+   bit [7:0] hex_var = 8'hFF;
+   byte      char_var = "A";
+   string    str_var = "ICECREAM for SV";
+   int       fixed_array[10]='{'h0, 'h3, 'h6, 'h9, 'hc, 'hf, 'h12, 'h15, 'h18, 'h1b};
+   int       dynamic_array[]= '{'h0, 'h5, 'ha, 'hf, 'h14};
+   int       assoc_array[string] = '{"first":'h64, "second":'hc8, "third":'h12c};
+   int       queue[$] = '{'ha, 'h14, 'h1e};
+   
+   typedef struct {
+      int         struct_int;
+      string      struct_string;
+      bit [7:0]   struct_bit;
+   } struct_t;
+   struct_t my_struct='{struct_int:'haa, struct_string:"Hello, World!", struct_bit:'hff};
+   
+   typedef union  {
+      int         union_int;
+      reg [31:0]  union_reg;
+      bit [31:0]   union_bit;
+   } union_t;
+   union_t my_union;
+   
+   initial begin
+      my_union.union_int = 'h55;
+      `IC;
+      `IC_HEX(hex_var);
+      `IC_DEC(decimal_var);
+      `IC_CHAR(char_var);
+      `IC_STR(str_var);
+      `IC_ARR(fixed_array)
+      `IC_ARR(dynamic_array)
+      `IC_ARR(assoc_array)
+      `IC_ARR(queue)
+      `IC_ARR(my_struct)
+      `IC_ARR(my_union)
       
-   `IC;          // This will print this line number and  file name  
-   `IC_HEX(value); // This will print the variable name and its value in hex format
-   `IC_DEC(value); // This will print the variable name and its value in dec format
-   `IC_CHAR(char); // This will print ASCII and HEX for char_var variable
-   `IC_STR(str);   // This will print string_var string
-      
-   $finish;
-end // initial begin
-endmodule: my_module
+      $finish;
+   end // initial begin
+   
+endmodule:  my_module
 
-Output: 
+Output:
 
-IC_SV:: @0 Line:29 File:../test_icecream.sv
-IC_SV:: @0 value(a)
-IC_SV:: @0 value(10)
-IC_SV:: @0 char(41),(A)
-IC_SV:: @0 str(ICECREAM for SV)
+  IC_SV:: @0 Line:128 File:../test_icecream.sv
+  IC_SV:: @0 hex_var(ff)
+  IC_SV:: @0 decimal_var(123)
+  IC_SV:: @0 char_var(41),(A)
+  IC_SV:: @0 str_var(s)Hello, World
+  IC_SV:: @0 fixed_array('{'h0, 'h3, 'h6, 'h9, 'hc, 'hf, 'h12, 'h15, 'h18, 'h1b} )
+  IC_SV:: @0 dynamic_array('{'h0, 'h5, 'ha, 'hf, 'h14} )
+  IC_SV:: @0 assoc_array('{"first":'h64, "second":'hc8, "third":'h12c} )
+  IC_SV:: @0 queue('{'ha, 'h14, 'h1e} )
+  IC_SV:: @0 my_struct('{struct_int:'haa, struct_string:"ICECREAM for SV", struct_bit:'hff})
+  IC_SV:: @0 my_union('{union_int:'h55, union_reg:'h55, union_bit:'h55})
 
 ```
 

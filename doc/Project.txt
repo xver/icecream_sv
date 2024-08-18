@@ -70,20 +70,11 @@ Copyright: Copyright © 2016-2023 IC Verimeter
 # Source Code
 # ------------------------------------------------------------------------
 
-Source Folder: ../utils/c/include
-   Name: 1. C utils
+Source Folder: ../src
+   Name: 1. source utils
 
-Source Folder 2: ../utils/dpi/include
-   Name: 2. DPI C utils
-
-Source Folder 3: ../utils/dpi/src
-   Name: 3. DPI SV utils
-
-Source Folder 4: ../utils/sc/src
-   Name: 4. TLM 2.0 SC utils
-
-Source Folder 5: ../utils/py/shunt_py
-   Name: 5. Python utils
+Source Folder 2: ../test
+   Name: 2. test
 
 
 # This is where you tell Natural Docs which folders it should scan for source

@@ -82,7 +82,19 @@ package icecream_pkg;
  * > `IC_STR(my_var)
  */
 `define IC_STR(__VALUE) $display("IC_SV:: @%0t %s(s)",$time, `"__VALUE`", __VALUE);
-
+ 
+/**
+ * Macro: IC_ARR
+ *
+ * Displays structures, arrays, and unions representation of a variable along with the current simulation time.
+ *
+ * Parameters:
+ *   __VALUE - The variable to be displayed.
+ *
+ * Example:
+ * > `IC_ARR(my_var)
+ */  
+`define IC_ARR(__VALUE) $display("IC_SV:: @%0t %s(%0p)",$time,`"__VALUE`", __VALUE);
 endpackage // icecream_pkg
 
    

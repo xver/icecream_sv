@@ -1,1 +1,1 @@
-﻿NDSearch.OnPrefixDataLoaded("str",["Variable"],[["str_var",,[["test_icecream",,,,0,"File2:test_icecream.sv:test_icecream.str_var","SystemVerilogModule:test_icecream:str_var"]]]]);
+﻿NDSearch.OnPrefixDataLoaded("str",["Variable"],[["str_var",,[["test_icecream",,,,0,"File2:test_icecream.sv:test_icecream.str_var","SystemVerilogModule:test_icecream:str_var"]]],["struct_t",,[["test_icecream",,,,0,"File2:test_icecream.sv:test_icecream.struct_t","SystemVerilogModule:test_icecream:struct_t"]]]]);

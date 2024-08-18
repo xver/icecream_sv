@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("fix",["Variable"],[["fixed_array",,[["test_icecream",,,,0,"File2:test_icecream.sv:test_icecream.fixed_array","SystemVerilogModule:test_icecream:fixed_array"]]]]);
