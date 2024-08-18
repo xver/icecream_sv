@@ -42,7 +42,7 @@ package icecream_pkg;
  * Example:
  * > `IC_HEX(my_var)
  */
-`define IC_HEX(__VALUE) $display("IC_SV:: @%0t __VALUE(%0h)", $time,__VALUE);
+`define IC_HEX(__VALUE) $display("IC_SV:: @%0t %s(%0h)",$time, `"__VALUE`", __VALUE);
 
 /**
  * Macro: IC_DEC
@@ -55,7 +55,7 @@ package icecream_pkg;
  * Example:
  * > `IC_DEC(my_var)
  */
-`define IC_DEC(__VALUE) $display("IC_SV:: @%0t __VALUE(%0d)", $time,__VALUE);
+`define IC_DEC(__VALUE) $display("IC_SV:: @%0t %s(%0d)",$time, `"__VALUE`", __VALUE);
 
 /**
  * Macro: IC_CHAR
@@ -68,7 +68,7 @@ package icecream_pkg;
  * Example:
  * > `IC_CHAR(my_var)
  */
-`define IC_CHAR(__VALUE) $display("IC_SV:: @%0t __VALUE(%0h),(%s)", $time,__VALUE,__VALUE);
+`define IC_CHAR(__VALUE) $display("IC_SV:: @%0t %s(%0h),(%s)", $time, `"__VALUE`", __VALUE, __VALUE);
 
 /**
  * Macro: IC_STR
@@ -81,7 +81,7 @@ package icecream_pkg;
  * Example:
  * > `IC_STR(my_var)
  */
-`define IC_STR(__VALUE) $display("IC_SV:: @%0t __VALUE(%s)", $time,__VALUE);
+`define IC_STR(__VALUE) $display("IC_SV:: @%0t %s(s)",$time, `"__VALUE`", __VALUE);
 
 endpackage // icecream_pkg
 
