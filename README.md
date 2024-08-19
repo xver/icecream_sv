@@ -15,7 +15,7 @@ To use `icecream_sv`, simply include and import the `icecream_pkg.sv` file in yo
 To debug with `icecream_sv`, use the `IC` macros anywhere in your SystemVerilog code:
 
 ```systemverilog
-odule my_module;
+module my_module;
    
    import icecream_pkg::*; 
    
