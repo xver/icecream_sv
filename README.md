@@ -6,6 +6,10 @@ Never use **$display** and **`uvm_info** to debug SystemVerilog again.
 
 The **icecream_sv** utility makes it easier to inspect variables, expressions, and program flow with minimal syntax. Inspired by the `IceCream` project, `icecream_sv` aims to bring the simplicity and convenience of those tools to the SystemVerilog world. **icecream_sv** is available under the MIT License and can be used without restriction in both open-source and commercial applications.
 
+Also, check out other open-source projects by IC Verimeter:
+ - [The Shunt](https://github.com/xver/Shunt): An Open Source Client/Server TCP/IP socket-based communication library designed for integrating SystemVerilog simulations with external applications in C, SystemC, and Python.
+ - [SVDB Gateway](https://github.com/xver/svdb_gateway): A bridge between SystemVerilog and SQLite databases, allowing SystemVerilog code to interact with SQLite through the Direct Programming Interface (DPI).
+
 ## Installation
 
 To use `icecream_sv`, simply include and import the `icecream_pkg.sv` file in your project's build flow.
