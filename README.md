@@ -1,4 +1,4 @@
-# Welcome to icecream_sv - IceCream for SystemVerilog! !["Copyright (c) 2024 IC Verimeter"](https://github.com/xver/icecream_sv/blob/main/doc/IcVerimeter_logo.png)
+# Welcome to icecream_sv - IceCream for SystemVerilog! !["Copyright (c) 2024 IC Verimeter"](https://github.com/xver/icecream_sv/blob/main/doc/IcVerimeter_logo.png) [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/xver)
 
 ![icecream_sv Logo](https://github.com/xver/icecream_sv/blob/main/doc/icecream_sv_log.png)
 
@@ -10,12 +10,10 @@ Also, check out other open-source projects by IC Verimeter:
  - [The Shunt](https://github.com/xver/Shunt): An Open Source Client/Server TCP/IP socket-based communication library designed for integrating SystemVerilog simulations with external applications in C, SystemC, and Python.
  - [SVDB Gateway](https://github.com/xver/svdb_gateway): A bridge between SystemVerilog and SQLite databases, allowing SystemVerilog code to interact with SQLite through the Direct Programming Interface (DPI).
 
-## Installation
-
+## Installation 
 To use `icecream_sv`, simply include and import the `icecream_pkg.sv` file in your project's build flow.
 
 ## Usage
-
 To debug with `icecream_sv`, use the `IC` macros anywhere in your SystemVerilog code:
 
 ```systemverilog
@@ -81,7 +79,7 @@ Output:
 
 ```
 
-### Compile and Run Example
+### Compile and Run Example 
 
 - Change directory to `test/<simulator>`
 - Run `make`
@@ -98,12 +96,12 @@ Output:
 - **Minimal Syntax**: Use the `IC` macros for everything, keeping your debug code clean and concise.
 - **Flexible**: Works with any SystemVerilog data type.
 
-## Contributing and Bugs
+## Contributing and Bugs [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/xver)
 
 - Contributions to `icecream_sv` are welcome! Whether it's adding new features, fixing bugs, or improving documentation, feel free to fork the repository and submit a pull request.
 - Please report bugs to the [Issues](https://github.com/xver/icecream_sv/issues) page.
 
-## Questions, Enquiries, Commercial Support
+## Questions, Enquiries, Commercial Support [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/xver)
 
 Please contact us at **icshunt.help@gmail.com**
 
@@ -111,7 +109,7 @@ Please contact us at **icshunt.help@gmail.com**
 
 `icecream_sv` is released under the MIT License. See the LICENSE file for more details.
 
-## Acknowledgments
+## Acknowledgments 
 
 - Inspired by `IceCream` protects: 
 
@@ -133,7 +131,7 @@ Delicious `IceCream` should be enjoyed in every language.
 - Clojure(Script): [icecream-cljc](https://github.com/Eigenbahn/icecream-cljc)
 - Bash: [IceCream-Bash](https://github.com/jtplaarj/IceCream-Bash)
 -------------------------
-!["Copyright (c) 2024 IC Verimeter"](https://github.com/xver/icecream_sv/blob/main/doc/IcVerimeter_logo.png)
+!["Copyright (c) 2024 IC Verimeter"](https://github.com/xver/icecream_sv/blob/main/doc/IcVerimeter_logo.png) [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/xver)
 Copyright (c) 2024 IC Verimeter
 
 
