@@ -116,7 +116,7 @@ IC_SV:: @0 char_var(41),(A)
 - Change directory to `test/verilator`
 - Run `make`
 
-*NOTE: The example is provided for Verilator only. For other simulators, use [EDA Playground](https://www.edaplayground.com/x/J3HG)
+**NOTE**: The example is provided for Verilator only. For other simulators, use [EDA Playground](https://www.edaplayground.com/x/J3HG)
 
 ## HTML Documentation
 
