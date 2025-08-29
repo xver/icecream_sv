@@ -20,6 +20,8 @@ Also, check out other open-source projects by IC Verimeter.
 * Lightweight: small footprint, no runtime dependencies or external tools
 * Portable: written in plain SystemVerilog and works in typical simulator workflows
 
+## HTML Documentation
+- API specification is available [here](https://raw.githack.com/xver/icecream_sv/master/doc/index.html).
 ## Installation
 
 To use `icecream_sv`, simply include and import the `icecream_pkg.sv` file in your project's build flow.
@@ -118,9 +120,7 @@ IC_SV:: @0 char_var(41),(A)
 
 **NOTE**: The example is provided for Verilator only. For other simulators, use [EDA Playground](https://www.edaplayground.com/x/J3HG)
 
-## HTML Documentation
 
-- API specification is available [here](https://raw.githack.com/xver/icecream_sv/master/doc/index.html).
 
 ## Features
 
