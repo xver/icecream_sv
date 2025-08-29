@@ -4,9 +4,9 @@
  Copyright (c) 2024 IC Verimeter. All rights reserved.
                Licensed under the MIT License.
                See LICENSE file in the project root for full license information.
- Description : Simple implementation of IceCream for SystemVerilog 
+ Description : Simple implementation of IceCream for SystemVerilog
  Inspired by `IceCream` projects,  for Python,C++,Bash and e.t.c
- ============================================================================
+ ===========================================================================
 */
 
 
@@ -14,9 +14,9 @@
  * Package: icecream_pkg
  *
  * A utility package for debugging in SystemVerilog that provides easy-to-use macros for displaying variable values and diagnostic information.
- * 
+ *
  * Inspired by `IceCream`projects
- * 
+ *
  */
 
 package icecream_pkg;
@@ -24,12 +24,31 @@ package icecream_pkg;
 /**
  * Macro: IC
  *
- * Displays a message with the current simulation time, line number, and file name.
+ * Displays debug line with the current simulation time and, optionally, the
+ * caller's line number and file name. If a value is provided, the macro also
+ * prints the expression name and its value. If call with no
+ * arguments only the time, line number and file name is displayed.
  *
- * Example:
- * > `IC 
+ * Parameters:
+ *   __VALUE__   - (optional) Expression or variable to display.
+ *   __LINE_EN   - (optional) "YES" (default) to include Line/File, "NO" to omit.
+ *
+ * Examples:
+ * > `IC()
+ * > `IC(my_sig)
+ * > `IC(my_sig, "NO")
  */
-`define IC  $display("IC_SV:: @%0t Line:%0d File:%s",$time,`__LINE__,`__FILE__);
+
+`define IC(__VALUE__=__IC_NOARG,__LINE_EN="YES") \
+begin \
+/* verilator lint_off UNUSEDSIGNAL */ \
+/* verilator lint_off UNDRIVEN */ \
+  logic [0:0] __IC_NOARG; \
+  $write("IC_SV:: @%0t ", $time); \
+  if (__LINE_EN == "YES") $write("Line:%0d File:%s", `__LINE__, `__FILE__); \
+  if (`"__VALUE__`" != "__IC_NOARG") $write(" %s(%0p)", `"__VALUE__`", __VALUE__); \
+  $display(""); \
+end
 
 /**
  * Macro: IC_HEX
@@ -82,7 +101,7 @@ package icecream_pkg;
  * > `IC_STR(my_var)
  */
 `define IC_STR(__VALUE) $display("IC_SV:: @%0t %s(s)",$time, `"__VALUE`", __VALUE);
- 
+
 /**
  * Macro: IC_ARR
  *
@@ -93,8 +112,8 @@ package icecream_pkg;
  *
  * Example:
  * > `IC_ARR(my_var)
- */  
+ */
 `define IC_ARR(__VALUE) $display("IC_SV:: @%0t %s(%0p)",$time,`"__VALUE`", __VALUE);
 endpackage // icecream_pkg
 
-   
+
