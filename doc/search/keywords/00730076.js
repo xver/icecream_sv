@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("sv",["File"],[["sv",,[[,"icecream_pkg.sv",,,0,"File:icecream_pkg.sv:icecream_pkg.sv"],[,"test_icecream.sv",,,0,"File2:test_icecream.sv:test_icecream.sv"]]]]);

@@ -1,10 +1,15 @@
 /*
 ============================================================================
- File        : icecream_pkg.sv
- Copyright (c) 2024 IC Verimeter. All rights reserved.
-               Licensed under the MIT License.
-               See LICENSE file in the project root for full license information.
- Description : Simple implementation of IceCream for SystemVerilog
+ File: icecream_pkg.sv
+ 
+       Copyright (c) 2025 IC Verimeter. All rights reserved.
+              
+       Licensed under the MIT License.
+ 
+       See LICENSE file in the project root for full license information.
+ 
+       Description: Simple implementation of IceCream for SystemVerilog
+ 
  Inspired by `IceCream` projects,  for Python,C++,Bash and e.t.c
  ===========================================================================
 */
