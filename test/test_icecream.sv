@@ -117,12 +117,13 @@ module test_icecream;
 
 
   initial begin
+     
       my_union.union_int = 'h55;
-
-      /**
+     /**
        * Define: IC
        * Demonstrates the use of the IC macro to display the following data types:
-       *
+       * 
+       * - display file name & line only
        * - decimal (int)
        * - hexadecimal (bit [7:0])
        * - character (byte)
@@ -136,17 +137,17 @@ module test_icecream;
        *
        * Output:
        * --- Code
-         IC_SV:: @0 Line:152 File:../test_icecream.sv
-         IC_SV:: @0 Line:153 File:../test_icecream.sv decimal_var('h7b)
-         IC_SV:: @0 Line:154 File:../test_icecream.sv hex_var('hff)
-         IC_SV:: @0 Line:155 File:../test_icecream.sv char_var('h41)
-         IC_SV:: @0 Line:156 File:../test_icecream.sv str_var("Hello, World")
-         IC_SV:: @0 Line:157 File:../test_icecream.sv fixed_array('{'h0, 'h3, 'h6, 'h9, 'hc, 'hf, 'h12, 'h15, 'h18, 'h1b} )
-         IC_SV:: @0 Line:158 File:../test_icecream.sv dynamic_array('{'h0, 'h5, 'ha, 'hf, 'h14} )
-         IC_SV:: @0 Line:159 File:../test_icecream.sv assoc_array('{"first":'h64, "second":'hc8, "third":'h12c} )
-         IC_SV:: @0 Line:160 File:../test_icecream.sv queue('{'ha, 'h14, 'h1e} )
-         IC_SV:: @0 Line:161 File:../test_icecream.sv my_struct('{struct_int:'haa, struct_string:"Hello, World!", struct_bit:'hff})
-         IC_SV:: @0 Line:162 File:../test_icecream.sv my_union('{union_int:'h55, union_reg:'h55, union_bit:'h55})
+       *  IC_SV:: @0 Line:152 File:../test_icecream.sv
+       *  IC_SV:: @0 Line:153 File:../test_icecream.sv decimal_var('h7b)
+       *  IC_SV:: @0 Line:154 File:../test_icecream.sv hex_var('hff)
+       *  IC_SV:: @0 Line:155 File:../test_icecream.sv char_var('h41)
+       *  IC_SV:: @0 Line:156 File:../test_icecream.sv str_var("Hello, World")
+       *  IC_SV:: @0 Line:157 File:../test_icecream.sv fixed_array('{'h0, 'h3, 'h6, 'h9, 'hc, 'hf, 'h12, 'h15, 'h18, 'h1b} )
+       *  IC_SV:: @0 Line:158 File:../test_icecream.sv dynamic_array('{'h0, 'h5, 'ha, 'hf, 'h14} )
+       *  IC_SV:: @0 Line:159 File:../test_icecream.sv assoc_array('{"first":'h64, "second":'hc8, "third":'h12c} )
+       *  IC_SV:: @0 Line:160 File:../test_icecream.sv queue('{'ha, 'h14, 'h1e} )
+       *  IC_SV:: @0 Line:161 File:../test_icecream.sv my_struct('{struct_int:'haa, struct_string:"Hello, World!", struct_bit:'hff})
+       *  IC_SV:: @0 Line:162 File:../test_icecream.sv my_union('{union_int:'h55, union_reg:'h55, union_bit:'h55})
        * ---
        */
       `IC();

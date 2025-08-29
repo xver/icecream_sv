@@ -40,7 +40,7 @@ package icecream_pkg;
  */
 
 `define IC(__VALUE__=__IC_NOARG,__LINE_EN="YES") \
-begin \
+   begin \
 /* verilator lint_off UNUSEDSIGNAL */ \
 /* verilator lint_off UNDRIVEN */ \
   logic [0:0] __IC_NOARG; \
@@ -48,7 +48,10 @@ begin \
   if (__LINE_EN == "YES") $write("Line:%0d File:%s", `__LINE__, `__FILE__); \
   if (`"__VALUE__`" != "__IC_NOARG") $write(" %s(%0p)", `"__VALUE__`", __VALUE__); \
   $display(""); \
-end
+ /* verilator lint_on UNUSEDSIGNAL */ \
+/* verilator lint_on UNDRIVEN */ \
+   end
+   
 
 /**
  * Macro: IC_HEX
