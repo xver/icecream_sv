@@ -176,4 +176,4 @@ Delicious `IceCream` should be enjoyed in every language.
 ---
 
 ![img](https://github.com/xver/icecream_sv/blob/main/doc/IcVerimeter_logo.png) [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/xver)
-Copyright (c) 2024 IC Verimeter
+Copyright (c) 2025 IC Verimeter
