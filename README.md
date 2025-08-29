@@ -137,9 +137,9 @@ IC_SV:: @0 char_var(41),(A)
 Please follow these simple guidelines:
 
 1. Fork the repository and create a topic branch for your changes.
-3. Run the existing examples ()test/verilator) or try them on EDA Playground, and add new tests for any new behaviour.
-4. Open a pull request describing your changes and the reasoning behind them.
-5. Follow the project code style and keep the package small and dependency-free.
+2. Run the existing examples ()test/verilator) or try them on EDA Playground, and add new tests for any new behaviour.
+3. Open a pull request describing your changes and the reasoning behind them.
+4. Follow the project code style and keep the package small and dependency-free.
 
 - Please report bugs to the [Issues](https://github.com/xver/icecream_sv/issues) page.
 
@@ -175,5 +175,5 @@ Delicious `IceCream` should be enjoyed in every language.
 
 ---
 
-![img](https://github.com/xver/icecream_sv/blob/main/doc/IcVerimeter_logo.png) [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/xver)
-Copyright (c) 2025 IC Verimeter
+![img](https://github.com/xver/icecream_sv/blob/main/doc/IcVerimeter_logo.png) [![img](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/xver)
+Copyright (c) 2024-2025 IC Verimeter

@@ -1,13 +1,13 @@
 /*
  ============================================================================
  File: test_icecream.sv
- 
- Copyright (c) 2025 IC Verimeter. All rights reserved.
- 
+
+ Copyright (c) 2024-2025 IC Verimeter. All rights reserved.
+
  Licensed under the MIT License.
- 
+
  See LICENSE file in the project root for full license information.
- 
+
  Description : icecream_sv test
  ============================================================================
  */
@@ -121,12 +121,12 @@ module test_icecream;
 
 
   initial begin
-     
+
       my_union.union_int = 'h55;
      /**
        * Define: IC
        * Demonstrates the use of the IC macro to display the following data types:
-       * 
+       *
        * - display file name & line only
        * - decimal (int)
        * - hexadecimal (bit [7:0])

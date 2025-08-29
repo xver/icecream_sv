@@ -2,7 +2,7 @@
 ============================================================================
  File: icecream_pkg.sv
  
-       Copyright (c) 2025 IC Verimeter. All rights reserved.
+       Copyright (c) 2024-2025 IC Verimeter. All rights reserved.
               
        Licensed under the MIT License.
  
