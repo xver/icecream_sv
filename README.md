@@ -12,6 +12,7 @@ Also, check out other open-source projects by IC Verimeter.
 
 - [The Shunt](https://github.com/xver/Shunt): An Open Source Client/Server TCP/IP socket-based communication library designed for integrating SystemVerilog simulations with external applications in C, SystemC, and Python.
 - [SVDB Gateway](https://github.com/xver/svdb_gateway): A bridge between SystemVerilog and SQLite databases, allowing SystemVerilog code to interact with SQLite through the Direct Programming Interface (DPI).
+- [SV ND Scribe](https://github.com/xver/sv-nd-scribe): A SystemVerilog toolkit combining NaturalDocs-based documentation rules, a static linter, and a VS Code extension for real-time in-editor feedback.
 
 ## Why use icecream_sv?
 
